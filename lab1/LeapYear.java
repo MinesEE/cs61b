@@ -7,14 +7,14 @@ public class LeapYear {
 	if year is leap or not. */
 	public static boolean isLeapYear (int year) {
 		if (year % 100 == 0) {
-			int d = year / 100;
-			return d % 4 == 0;
+			return (year / 100) % 4 == 0;
 		}
-		if (year % 4 != 0) {
-			return false;
-		} else {
-			return true;
-		}
+		return year % 4 == 0;
+// 		if (year % 4 != 0) {
+// 			return false;
+// 		} else {
+// 			return true;
+// 		}
 	}
 
     /** Calls isLeapYear to print correct statement.
