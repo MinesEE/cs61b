@@ -10,12 +10,6 @@ public class LeapYear {
 			return (year / 100) % 4 == 0;
 		}
 		return year % 4 == 0;
-// 		if (year % 4 != 0) {
-// 			return false;
-// 		} else {
-// 			return true;
-// 		}
-	}
 
     /** Calls isLeapYear to print correct statement.
      *  @param  year to be analyzed
